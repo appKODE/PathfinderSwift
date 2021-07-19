@@ -1,0 +1,6 @@
+framework module Pods_Pathfinder_Example {
+  umbrella header "Pods-Pathfinder_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

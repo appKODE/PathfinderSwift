@@ -1,0 +1,16 @@
+PODS:
+  - Pathfinder (0.1.0)
+
+DEPENDENCIES:
+  - Pathfinder (from `../`)
+
+EXTERNAL SOURCES:
+  Pathfinder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Pathfinder: cce59fdacc820aca4312329002ea3c49cd466aad
+
+PODFILE CHECKSUM: 84d838bd641027190c08707d7b768097eae54c41
+
+COCOAPODS: 1.10.1
