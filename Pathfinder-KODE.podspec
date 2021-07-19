@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Pathfinder'
+  s.name             = 'Pathfinder-KODE'
   s.version          = '0.1.0'
   s.summary          = 'Pathfinder is a simple URL resolver that allow you to simply add any environment parameters to URLs via UI'
 
@@ -31,6 +31,7 @@ Pathfinder - simple URL resolver with basic user interface allowing you to subst
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'Sources/**/*.swift'
+  s.swift_version = '5.0'
   
   # s.resource_bundles = {
   #   'Pathfinder' => ['Pathfinder/Assets/*.png']
