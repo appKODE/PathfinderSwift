@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3CF330EE953083BC316C8401 /* Pathfinder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Pathfinder.podspec; path = ../Pathfinder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3CF330EE953083BC316C8401 /* Pathfinder-KODE.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "Pathfinder-KODE.podspec"; path = "../Pathfinder-KODE.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		49EEBB2820E3C943DE63AD89 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		571B0DD4DEAB84132B3582D5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		5803FC9BA18595305CE86707 /* Pods-Pathfinder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pathfinder_Tests.debug.xcconfig"; path = "Target Support Files/Pods-Pathfinder_Tests/Pods-Pathfinder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				3CF330EE953083BC316C8401 /* Pathfinder.podspec */,
+				3CF330EE953083BC316C8401 /* Pathfinder-KODE.podspec */,
 				571B0DD4DEAB84132B3582D5 /* README.md */,
 				49EEBB2820E3C943DE63AD89 /* LICENSE */,
 			);
