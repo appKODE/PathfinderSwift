@@ -21,6 +21,8 @@ import Pathfinder
 ```
 
 ## Configure Pathfinder
+
+To configure Pathfinder, please use ```configure()``` method and fill it with data in the begining of your App life cycle (e.g.: ```sceneDelegate.swift```). You will need to pass environment parameters, API method specs and default configuration.
 ```swift
 let devEnv = PathfinderEnvironment(id: UUID(), name: "DEV", baseUrl: "dev.ru", queryParams: ["__code", "__example"])
 let intEnv = PathfinderEnvironment(id: UUID(), name: "INT", baseUrl: "int.ru", queryParams: ["__code"])
@@ -48,7 +50,7 @@ if let url = try? Pathfinder.shared.buildUrl(id: "auth", pathParameters: [:], qu
 
 ## Author
 
-Medvedev Semyon, 61358874+Simon-developer@users.noreply.github.com
+Medvedev Semyon, sm@kode.ru
 
 ## License
 
