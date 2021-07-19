@@ -6,6 +6,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+## Usage examples
+<img src="https://git.appkode.ru/dev-department/pathfinder-ios/-/raw/master/Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.04.png" width="200" height="450">
+<img src="https://git.appkode.ru/dev-department/pathfinder-ios/-/raw/master/Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.10.png" width="200" height="450">
+
 ## Installation
 
 Pathfinder is available through [CocoaPods](https://cocoapods.org). To install
