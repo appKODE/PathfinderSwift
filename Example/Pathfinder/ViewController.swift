@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pathfinder
 
 class ViewController: UIViewController {
 
@@ -20,5 +21,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func pfOpenTapped(_ sender: Any) {
+        present(Pathfinder.shared.makeController(), animated: true)
+    }
+
+
+    @IBAction func pfLogTapped(_ sender: Any) {
+        if let url = try? Pathfinder.shared.buildUrl(id: "auth", pathParameters: [:], queryParameters: [:]) {
+            print(url)
+        } else {
+            fatalError("Unable to resolve URL")
+        }
+    }
 }
 

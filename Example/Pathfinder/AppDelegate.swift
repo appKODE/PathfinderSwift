@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Pathfinder
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,8 +15,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        let devEnv = PathfinderEnvironment(id: UUID(), name: "DEV", baseUrl: "dev.ru", queryParams: ["__code"])
+        let intEnv = PathfinderEnvironment(id: UUID(), name: "INT", baseUrl: "int.ru", queryParams: ["__code"])
+        let relEnv = PathfinderEnvironment(id: UUID(), name: "REL", baseUrl: "rel.ru", queryParams: [])
+
+        Pathfinder.shared.configure(
+            specs: [
+                .init(id: "auth", pathTemplate: "/auth/login", httpMethod: .get, tag: "auth", name: "Authentication", currentStoplightQueryParams: [:]),
+                .init(id: "register", pathTemplate: "/auth/register", httpMethod: .get, tag: "auth", name: "Registration", currentStoplightQueryParams: [:])
+            ],
+            environments: [devEnv, intEnv, relEnv],
+            config: .init(env: devEnv))
+
         return true
     }
 

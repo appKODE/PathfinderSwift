@@ -139,7 +139,7 @@ public final class Pathfinder {
     ///
     /// - Parameters:
     ///   - paramName: key for one of temporaryEnvParameters elements (is got from current environment spec)
-    ///   - urlId:     UrlSpec Id, needed to retreive envParam value only for one definite UrlSpec
+    ///   - urlId:     UrlSpec Id, needed to retrieve envParam value only for one definite UrlSpec
     /// - Returns:
     ///   - Current temporary value for this environment parameter
     ///

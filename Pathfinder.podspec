@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Pathfinder'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Pathfinder.'
+  s.summary          = 'Pathfinder is a simple URL resolver that allow you to simply add any environment parameters to URLs via UI'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,19 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Pathfinder - simple URL resolver with basic user interface allowing you to substitute environment parameters for debugging and testing purposes.
                        DESC
 
-  s.homepage         = 'https://github.com/Medvedev Semyon/Pathfinder'
+  s.homepage         = 'https://git.appkode.ru/dev-department/pathfinder-ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Medvedev Semyon' => '61358874+Simon-developer@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/Medvedev Semyon/Pathfinder.git', :tag => s.version.to_s }
+  s.author           = { 'Medvedev Semyon' => 'sm@kode.ru' }
+  s.source           = { :git => 'https://git.appkode.ru/dev-department/pathfinder-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'Pathfinder/Classes/**/*'
+  s.source_files = 'Sources/**/*.swift'
   
   # s.resource_bundles = {
   #   'Pathfinder' => ['Pathfinder/Assets/*.png']

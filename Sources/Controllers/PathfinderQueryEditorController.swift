@@ -25,24 +25,24 @@ final class QueryEditorController: UIViewController {
 
         guard let config = config else { return }
         let iconView = UIImageView()
-        iconView.image = UIImage(systemName: "network")
+        iconView.image = nil//UIImage(systemName: "network")
         iconView.contentMode = .scaleAspectFit
         iconView.translatesAutoresizingMaskIntoConstraints = false
 
-        view.addSubview(iconView)
-        iconView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
-        iconView.topAnchor.constraint(equalTo: view.topAnchor, constant: 24).isActive = true
-        iconView.width(50)
-        iconView.height(50)
+//        view.addSubview(iconView)
+//        iconView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true
+//        iconView.topAnchor.constraint(equalTo: view.topAnchor, constant: 24).isActive = true
+//        iconView.width(50)
+//        iconView.height(50)
 
         let label = UILabel()
         label.text = config.name
-        label.font = UIFont.preferredFont(forTextStyle: .largeTitle)
+        label.font = UIFont.preferredFont(forTextStyle: .headline)//.largeTitle)
         label.translatesAutoresizingMaskIntoConstraints = false
 
         view.addSubview(label)
         label.topAnchor.constraint(equalTo: view.topAnchor, constant: 24).isActive = true
-        label.leadingAnchor.constraint(equalTo: iconView.trailingAnchor, constant: 12).isActive = true
+        label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24).isActive = true //iconView.trailingAnchor, constant: 12).isActive = true
         label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24).isActive = true
         label.height(50)
 

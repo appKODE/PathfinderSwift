@@ -12,8 +12,27 @@
 		235D8E81B07A8A4BD0DA9651568B0C8A /* Pods-Pathfinder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD28D35E448EF534E90163B43B434DB8 /* Pods-Pathfinder_Tests-dummy.m */; };
 		3A57F4DB17A46EEA45085087ED6A03BF /* Pods-Pathfinder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B3CBCA06B02F7D43B3FECA827ACE929 /* Pods-Pathfinder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		741738594B420518222AA15425E6D2BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		84B88B64F8F79A54D21748A854B0CB1C /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B4116643668E477565E2C4023B9961 /* ReplaceMe.swift */; };
 		B4875EF73901EFCDC5E111E8034F6F85 /* Pathfinder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55624437DC3D30AB228C079879CA66DB /* Pathfinder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB18F80426A58C82009AD4EA /* PathfinderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7EB26A58C82009AD4EA /* PathfinderController.swift */; };
+		BB18F80526A58C82009AD4EA /* PathfinderQueryEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7EC26A58C82009AD4EA /* PathfinderQueryEditorController.swift */; };
+		BB18F80626A58C82009AD4EA /* PathfinderHttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7ED26A58C82009AD4EA /* PathfinderHttpMethod.swift */; };
+		BB18F80726A58C82009AD4EA /* PathfinderCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7F026A58C82009AD4EA /* PathfinderCategoryView.swift */; };
+		BB18F80826A58C82009AD4EA /* PathfinderNestedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7F126A58C82009AD4EA /* PathfinderNestedListView.swift */; };
+		BB18F80926A58C82009AD4EA /* PathfinderQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7F226A58C82009AD4EA /* PathfinderQueryView.swift */; };
+		BB18F80A26A58C82009AD4EA /* QueryEditorField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7F326A58C82009AD4EA /* QueryEditorField.swift */; };
+		BB18F80B26A58C82009AD4EA /* ServerTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7F526A58C82009AD4EA /* ServerTypeView.swift */; };
+		BB18F80C26A58C82009AD4EA /* ServerSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7F626A58C82009AD4EA /* ServerSelectorView.swift */; };
+		BB18F80D26A58C82009AD4EA /* PathfinderPresentationStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7F826A58C82009AD4EA /* PathfinderPresentationStyleView.swift */; };
+		BB18F80E26A58C82009AD4EA /* PathfinderQueriesPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7F926A58C82009AD4EA /* PathfinderQueriesPresentationStyle.swift */; };
+		BB18F80F26A58C82009AD4EA /* PathfinderPresentationStyleSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7FA26A58C82009AD4EA /* PathfinderPresentationStyleSelectorView.swift */; };
+		BB18F81026A58C82009AD4EA /* PathfinderEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7FB26A58C82009AD4EA /* PathfinderEnvironment.swift */; };
+		BB18F81126A58C82009AD4EA /* Pathfinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7FC26A58C82009AD4EA /* Pathfinder.swift */; };
+		BB18F81226A58C82009AD4EA /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7FE26A58C82009AD4EA /* UIView + Extension.swift */; };
+		BB18F81326A58C82009AD4EA /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F7FF26A58C82009AD4EA /* UIStackView + Extension.swift */; };
+		BB18F81426A58C82009AD4EA /* PathfinderQueryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F80026A58C82009AD4EA /* PathfinderQueryService.swift */; };
+		BB18F81526A58C82009AD4EA /* PathfinderConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F80126A58C82009AD4EA /* PathfinderConfig.swift */; };
+		BB18F81626A58C82009AD4EA /* PathfinderUrlSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F80226A58C82009AD4EA /* PathfinderUrlSpec.swift */; };
+		BB18F81726A58C82009AD4EA /* PathfinderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18F80326A58C82009AD4EA /* PathfinderError.swift */; };
 		BE78E5784BC7A01166F0476765FCE3FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		ECB19E529C852DA1E379460FD73EFF66 /* Pods-Pathfinder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 092795AC90260B04FEB3627F59EB4D5B /* Pods-Pathfinder_Example-dummy.m */; };
 		F91842E4CC2407376E56DB80BC767C04 /* Pathfinder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36AFF82E2AD02CC9D974A09EA7488883 /* Pathfinder-dummy.m */; };
@@ -46,7 +65,6 @@
 		1AD533376CD7733B8A967180E4D47E59 /* Pathfinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pathfinder.release.xcconfig; sourceTree = "<group>"; };
 		23EF91EC548C2DF9215F42DD98FDE5FC /* Pods-Pathfinder_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pathfinder_Tests-Info.plist"; sourceTree = "<group>"; };
 		26FFBFD5A9B7BCFE21A7672A591D19FE /* Pods-Pathfinder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pathfinder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		29B4116643668E477565E2C4023B9961 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Pathfinder/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		29C7350A53D9C5C68DB73A084EC0C1BD /* Pods-Pathfinder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pathfinder_Example.release.xcconfig"; sourceTree = "<group>"; };
 		36AFF82E2AD02CC9D974A09EA7488883 /* Pathfinder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pathfinder-dummy.m"; sourceTree = "<group>"; };
 		4D1A8BDEAE8FFAA0B9B85B0AADA13299 /* Pods-Pathfinder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pathfinder_Example.modulemap"; sourceTree = "<group>"; };
@@ -54,22 +72,42 @@
 		5DDB8B1A36A2F1180BA300BAEE0236D0 /* Pods-Pathfinder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pathfinder_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6827554B90BE6A4DED22594D172532BF /* Pathfinder-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pathfinder-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		738C6DF40E9382F12EDF1517DE1F0BB9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		7ED5C65370A3154FFF6D5D60A81B296F /* Pathfinder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = Pathfinder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		738C6DF40E9382F12EDF1517DE1F0BB9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7ED5C65370A3154FFF6D5D60A81B296F /* Pathfinder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Pathfinder.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		99D130BB42C387FFD8668E93C4A111C3 /* Pods-Pathfinder_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pathfinder_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AC1ECF32A3FE719101BBCC1AD2DF408A /* Pods-Pathfinder_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pathfinder_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B5FB8669CD3623531235736352B758E8 /* Pods_Pathfinder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pathfinder_Tests.framework; path = "Pods-Pathfinder_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FB8669CD3623531235736352B758E8 /* Pods_Pathfinder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pathfinder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB18F7EB26A58C82009AD4EA /* PathfinderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderController.swift; sourceTree = "<group>"; };
+		BB18F7EC26A58C82009AD4EA /* PathfinderQueryEditorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderQueryEditorController.swift; sourceTree = "<group>"; };
+		BB18F7ED26A58C82009AD4EA /* PathfinderHttpMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderHttpMethod.swift; sourceTree = "<group>"; };
+		BB18F7F026A58C82009AD4EA /* PathfinderCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderCategoryView.swift; sourceTree = "<group>"; };
+		BB18F7F126A58C82009AD4EA /* PathfinderNestedListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderNestedListView.swift; sourceTree = "<group>"; };
+		BB18F7F226A58C82009AD4EA /* PathfinderQueryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderQueryView.swift; sourceTree = "<group>"; };
+		BB18F7F326A58C82009AD4EA /* QueryEditorField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryEditorField.swift; sourceTree = "<group>"; };
+		BB18F7F526A58C82009AD4EA /* ServerTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerTypeView.swift; sourceTree = "<group>"; };
+		BB18F7F626A58C82009AD4EA /* ServerSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSelectorView.swift; sourceTree = "<group>"; };
+		BB18F7F826A58C82009AD4EA /* PathfinderPresentationStyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderPresentationStyleView.swift; sourceTree = "<group>"; };
+		BB18F7F926A58C82009AD4EA /* PathfinderQueriesPresentationStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderQueriesPresentationStyle.swift; sourceTree = "<group>"; };
+		BB18F7FA26A58C82009AD4EA /* PathfinderPresentationStyleSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderPresentationStyleSelectorView.swift; sourceTree = "<group>"; };
+		BB18F7FB26A58C82009AD4EA /* PathfinderEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderEnvironment.swift; sourceTree = "<group>"; };
+		BB18F7FC26A58C82009AD4EA /* Pathfinder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pathfinder.swift; sourceTree = "<group>"; };
+		BB18F7FE26A58C82009AD4EA /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		BB18F7FF26A58C82009AD4EA /* UIStackView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		BB18F80026A58C82009AD4EA /* PathfinderQueryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderQueryService.swift; sourceTree = "<group>"; };
+		BB18F80126A58C82009AD4EA /* PathfinderConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderConfig.swift; sourceTree = "<group>"; };
+		BB18F80226A58C82009AD4EA /* PathfinderUrlSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderUrlSpec.swift; sourceTree = "<group>"; };
+		BB18F80326A58C82009AD4EA /* PathfinderError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PathfinderError.swift; sourceTree = "<group>"; };
 		C871E4FD48333CC038436B7A291B6141 /* Pods-Pathfinder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pathfinder_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CD28D35E448EF534E90163B43B434DB8 /* Pods-Pathfinder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pathfinder_Tests-dummy.m"; sourceTree = "<group>"; };
 		CF3CE6ECA1B689862E7D64C8B6D78FE8 /* Pathfinder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pathfinder-prefix.pch"; sourceTree = "<group>"; };
-		D2AE13A2D4D780FA4151C6C27A6A176B /* Pods_Pathfinder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pathfinder_Example.framework; path = "Pods-Pathfinder_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5693DCDA227074105BB90D76FBB8006 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D2AE13A2D4D780FA4151C6C27A6A176B /* Pods_Pathfinder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pathfinder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5693DCDA227074105BB90D76FBB8006 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D59BF2A87E3A91D18FD0795A3BF9B443 /* Pods-Pathfinder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pathfinder_Tests.modulemap"; sourceTree = "<group>"; };
 		D7C92914812337B7BFA37AD78596716F /* Pods-Pathfinder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pathfinder_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E172BF0CE5BAE9976881AFE1C48C3A1D /* Pathfinder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Pathfinder.modulemap; sourceTree = "<group>"; };
 		F4FDFFC0A4B848FC08AEE6878147A42B /* Pathfinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pathfinder.debug.xcconfig; sourceTree = "<group>"; };
-		FA4A2490866CC608B0F3F65A0A2E4BC7 /* Pathfinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pathfinder.framework; path = Pathfinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4A2490866CC608B0F3F65A0A2E4BC7 /* Pathfinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pathfinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,12 +209,87 @@
 		99AE47E8DE70B711EDE62A9755E37566 /* Pathfinder */ = {
 			isa = PBXGroup;
 			children = (
-				29B4116643668E477565E2C4023B9961 /* ReplaceMe.swift */,
+				BB18F81826A58C91009AD4EA /* Sources */,
 				9470F5F4987A1950DC8176C5201D93A4 /* Pod */,
 				2208BBA83A89B1189F8B8ECA8EA5BADC /* Support Files */,
 			);
 			name = Pathfinder;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		BB18F7EA26A58C82009AD4EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB18F7EB26A58C82009AD4EA /* PathfinderController.swift */,
+				BB18F7EC26A58C82009AD4EA /* PathfinderQueryEditorController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB18F7EE26A58C82009AD4EA /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				BB18F7EF26A58C82009AD4EA /* PathfinderNestedList */,
+				BB18F7F326A58C82009AD4EA /* QueryEditorField.swift */,
+				BB18F7F426A58C82009AD4EA /* PathfinderServerSelector */,
+				BB18F7F726A58C82009AD4EA /* PathfinderPresentationStyleSelector */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		BB18F7EF26A58C82009AD4EA /* PathfinderNestedList */ = {
+			isa = PBXGroup;
+			children = (
+				BB18F7F026A58C82009AD4EA /* PathfinderCategoryView.swift */,
+				BB18F7F126A58C82009AD4EA /* PathfinderNestedListView.swift */,
+				BB18F7F226A58C82009AD4EA /* PathfinderQueryView.swift */,
+			);
+			path = PathfinderNestedList;
+			sourceTree = "<group>";
+		};
+		BB18F7F426A58C82009AD4EA /* PathfinderServerSelector */ = {
+			isa = PBXGroup;
+			children = (
+				BB18F7F526A58C82009AD4EA /* ServerTypeView.swift */,
+				BB18F7F626A58C82009AD4EA /* ServerSelectorView.swift */,
+			);
+			path = PathfinderServerSelector;
+			sourceTree = "<group>";
+		};
+		BB18F7F726A58C82009AD4EA /* PathfinderPresentationStyleSelector */ = {
+			isa = PBXGroup;
+			children = (
+				BB18F7F826A58C82009AD4EA /* PathfinderPresentationStyleView.swift */,
+				BB18F7F926A58C82009AD4EA /* PathfinderQueriesPresentationStyle.swift */,
+				BB18F7FA26A58C82009AD4EA /* PathfinderPresentationStyleSelectorView.swift */,
+			);
+			path = PathfinderPresentationStyleSelector;
+			sourceTree = "<group>";
+		};
+		BB18F7FD26A58C82009AD4EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB18F7FE26A58C82009AD4EA /* UIView + Extension.swift */,
+				BB18F7FF26A58C82009AD4EA /* UIStackView + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB18F81826A58C91009AD4EA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				BB18F7EA26A58C82009AD4EA /* Controllers */,
+				BB18F7FD26A58C82009AD4EA /* Extensions */,
+				BB18F7EE26A58C82009AD4EA /* Layout */,
+				BB18F7FC26A58C82009AD4EA /* Pathfinder.swift */,
+				BB18F80126A58C82009AD4EA /* PathfinderConfig.swift */,
+				BB18F7FB26A58C82009AD4EA /* PathfinderEnvironment.swift */,
+				BB18F80326A58C82009AD4EA /* PathfinderError.swift */,
+				BB18F7ED26A58C82009AD4EA /* PathfinderHttpMethod.swift */,
+				BB18F80026A58C82009AD4EA /* PathfinderQueryService.swift */,
+				BB18F80226A58C82009AD4EA /* PathfinderUrlSpec.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -316,7 +429,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A37B8449CED1661023277F62DC914519 = {
+						LastSwiftMigration = 1250;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -375,8 +493,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB18F80926A58C82009AD4EA /* PathfinderQueryView.swift in Sources */,
+				BB18F80826A58C82009AD4EA /* PathfinderNestedListView.swift in Sources */,
+				BB18F81726A58C82009AD4EA /* PathfinderError.swift in Sources */,
+				BB18F81326A58C82009AD4EA /* UIStackView + Extension.swift in Sources */,
+				BB18F80B26A58C82009AD4EA /* ServerTypeView.swift in Sources */,
+				BB18F80F26A58C82009AD4EA /* PathfinderPresentationStyleSelectorView.swift in Sources */,
+				BB18F81226A58C82009AD4EA /* UIView + Extension.swift in Sources */,
+				BB18F81026A58C82009AD4EA /* PathfinderEnvironment.swift in Sources */,
+				BB18F80D26A58C82009AD4EA /* PathfinderPresentationStyleView.swift in Sources */,
+				BB18F80A26A58C82009AD4EA /* QueryEditorField.swift in Sources */,
+				BB18F80426A58C82009AD4EA /* PathfinderController.swift in Sources */,
+				BB18F80526A58C82009AD4EA /* PathfinderQueryEditorController.swift in Sources */,
+				BB18F80C26A58C82009AD4EA /* ServerSelectorView.swift in Sources */,
+				BB18F81126A58C82009AD4EA /* Pathfinder.swift in Sources */,
+				BB18F81626A58C82009AD4EA /* PathfinderUrlSpec.swift in Sources */,
+				BB18F81526A58C82009AD4EA /* PathfinderConfig.swift in Sources */,
+				BB18F80726A58C82009AD4EA /* PathfinderCategoryView.swift in Sources */,
 				F91842E4CC2407376E56DB80BC767C04 /* Pathfinder-dummy.m in Sources */,
-				84B88B64F8F79A54D21748A854B0CB1C /* ReplaceMe.swift in Sources */,
+				BB18F80626A58C82009AD4EA /* PathfinderHttpMethod.swift in Sources */,
+				BB18F80E26A58C82009AD4EA /* PathfinderQueriesPresentationStyle.swift in Sources */,
+				BB18F81426A58C82009AD4EA /* PathfinderQueryService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +613,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4FDFFC0A4B848FC08AEE6878147A42B /* Pathfinder.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -495,7 +633,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -506,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1AD533376CD7733B8A967180E4D47E59 /* Pathfinder.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -525,7 +665,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -685,8 +825,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

@@ -52,7 +52,7 @@ final class PathfinderCategoryView: UIView {
         }
 
         let folderImageView = UIImageView()
-        folderImageView.image = UIImage(systemName: "folder")
+        folderImageView.image = nil //UIImage(systemName: "folder")
         folderImageView.height(32)
         folderImageView.width(32)
 
@@ -60,7 +60,7 @@ final class PathfinderCategoryView: UIView {
         titleLabel.text = groupTitle
         titleLabel.font = UIFont.boldSystemFont(ofSize: 14)
 
-        containerStackView.addArrangedSubviews(folderImageView, titleLabel)
+        containerStackView.addArrangedSubviews(titleLabel)//folderImageView, titleLabel)
         containerStackView.embedIn(categoryView, hInset: 24, vInset: 12)
     }
 

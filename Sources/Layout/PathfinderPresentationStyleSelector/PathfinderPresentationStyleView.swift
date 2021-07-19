@@ -38,9 +38,9 @@ final class PathfinderPresentationStyleView: UIView {
         guard let presentationStyle = presentationStyle else { return }
         titleLabel.text = presentationStyle.title
         titleLabel.textAlignment = .center
-        iconImageView.image = UIImage(systemName: presentationStyle.iconSystemName)
+        iconImageView.image = nil//UIImage(systemName: presentationStyle.iconSystemName)
         iconImageView.contentMode = .scaleAspectFit
-        mainStack.addArrangedSubviews(iconImageView, titleLabel)
+        mainStack.addArrangedSubviews(titleLabel)//iconImageView, titleLabel)
 
         addSubview(mainStack)
         mainStack.translatesAutoresizingMaskIntoConstraints = false
