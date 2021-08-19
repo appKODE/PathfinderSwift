@@ -1,0 +1,16 @@
+PODS:
+  - Pathfinder-Swift (0.1.0)
+
+DEPENDENCIES:
+  - Pathfinder-Swift (from `../`)
+
+EXTERNAL SOURCES:
+  Pathfinder-Swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Pathfinder-Swift: 90f40c4906162de4e2af17141d9f0bad5287199e
+
+PODFILE CHECKSUM: 1fb8d0a0da6c9b5223f2432906daa1e9021c82e4
+
+COCOAPODS: 1.10.1

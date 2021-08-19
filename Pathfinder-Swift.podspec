@@ -1,42 +1,19 @@
-#
-# Be sure to run `pod lib lint Pathfinder-Swift.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'Pathfinder-Swift'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Pathfinder-Swift.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.summary          = 'Pathfinder is a simple URL resolver that allow you to add any environment parameters to URLs via UI'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Pathfinder is a URL resolver. It allows you to retrieve correct URL string depending on chosen server, path and query parameters. You just need to configure module in the beginning of you app's lifecycle and call buildUrl() whenever you need to make network request.
                        DESC
 
-  s.homepage         = 'https://github.com/Medvedev Semyon/Pathfinder-Swift'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/appKODE/pathfinder-swift.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Medvedev Semyon' => '61358874+Simon-developer@users.noreply.github.com' }
-  s.source           = { :git => 'https://github.com/Medvedev Semyon/Pathfinder-Swift.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'KODE' => 'slurm@kode.ru' }
+  s.source           = { :git => 'https://github.com/appKODE/pathfinder-swift.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Pathfinder-Swift/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'Pathfinder-Swift' => ['Pathfinder-Swift/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'Pathfinder-Swift/Classes/**/*.swift'
+  s.swift_version = '4.0'
 end

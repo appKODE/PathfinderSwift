@@ -1,0 +1,22 @@
+{
+  "name": "Pathfinder-Swift",
+  "version": "0.1.0",
+  "summary": "A short description of Pathfinder-Swift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Medvedev Semyon/Pathfinder-Swift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Medvedev Semyon": "61358874+Simon-developer@users.noreply.github.com"
+  },
+  "source": {
+    "git": "https://github.com/Medvedev Semyon/Pathfinder-Swift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Pathfinder-Swift/Classes/**/*"
+}
