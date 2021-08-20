@@ -1,10 +1,6 @@
 # Pathfinder
 
-Pathfinder - lightweight library that allows you to easily resolve URL's, depending on whatever environment, path parameters, query paramteres are currently chosen. Our library also provides you the abilities of toggling between you Dev or Production servers or mocking responses conveniently through the UI.
-
-
-## Pathfinder for other platforms
-Android link, Web link
+Pathfinder – lightweight library that allows you to easily resolve URL's, depending on whatever environment, path parameters and query paramteres are currently chosen. Our library also provides you the abilities of toggling between you Dev or Production servers or mocking responses conveniently through the UI.
 
 ## Example
 - Clone the Repo
@@ -16,13 +12,13 @@ Android link, Web link
 - Open `Pathfinder-Swift.xcworkspace` file
 
 ## Requirements
-**Swift 4.0 +**
+**Swift 4.0+**
 
-**iOS 9.0 +**
+**iOS 9.0+**
 
 ## Usage examples
-<img src="https://git.appkode.ru/dev-department/pathfinder-ios/-/raw/master/Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.04.png" width="200" height="450">
-<img src="https://git.appkode.ru/dev-department/pathfinder-ios/-/raw/master/Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.10.png" width="200" height="450">
+<img src="screenshots/Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.04.png" width="200" height="450">
+<img src="screenshots/Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.10.png" width="200" height="450">
 
 ## Installation
 
@@ -41,7 +37,7 @@ import Pathfinder_Swift
 ## Configure Pathfinder
 Pathfinder configuration requires you to make only 3 following steps: 
 #### First step
-To configure Pathfinder, you need to list all URL's you are going to use and possible parameters in the appropriate format - `UrlSpec`:
+To configure Pathfinder, you need to list all URL's you are going to use and possible parameters in the appropriate format – `UrlSpec`:
 ```swift
 let urlSpec1 = UrlSpec(
     id: "auth",
@@ -53,7 +49,7 @@ let urlSpec1 = UrlSpec(
 )
 ```
 #### Second step
-Describe all environments (servers) you are going to use in your project in appropriate format - `PFEnvironment`:
+Describe all environments (servers) you are going to use in your project in appropriate format – `PFEnvironment`:
 ```swift
 let devEnv = PFEnvironment(
     id: UUID(),
@@ -80,9 +76,9 @@ Pathfinder.shared.configure(
 To build an URL string you'll need to call `buildUrl()` method, passing in:
 - The required UrlSpec's Id
 
-- Path parameters - dictionary, which key is path parameter that could be found in endPoint (ex.: {sessionId} in auth/login/{sessionId})
+- Path parameters – dictionary, which key is path parameter that could be found in endPoint (ex.: {sessionId} in auth/login/{sessionId})
 
-- QueryParameters - dictionary, which values will be placed like GET params 
+- QueryParameters – dictionary, which values will be placed like GET params 
 ```swift
 if let url = try? Pathfinder.shared.buildUrl(id: "auth", pathParameters: [:], queryParameters: [:]) {
     // Make URLRequest...
@@ -109,16 +105,10 @@ extension ViewController: PathfinderStateDelegate {
 ```
 
 ## TODO
-Fill in our plans
+- Search
 
 ## Author
-##### KODE slurm@kode.ru
-
-If you have any questions about this library, please contact: 
-
-*Medvedev Semyon, sm@kode.ru*
-
-*Stepan Boychenko, bs@kode.ru*
+KODE slurm@kode.ru
 
 ## License
 
