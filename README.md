@@ -41,7 +41,7 @@ import Pathfinder_Swift
 ## Configure Pathfinder
 Pathfinder configuration requires you to make only 3 following steps: 
 #### First step
-Firstly. to configure Pathfinder, you need to list all URL's you are going to use and possible parameters in the appropriate format - `UrlSpec`:
+To configure Pathfinder, you need to list all URL's you are going to use and possible parameters in the appropriate format - `UrlSpec`:
 ```swift
 let urlSpec1 = UrlSpec(
     id: "auth",
@@ -64,7 +64,7 @@ let devEnv = PFEnvironment(
 ```
 
 #### Third step
-The last but not least is to configure shared instance of Pathfinder, simply by calling `configure()` and passing in everything we've just defined.
+Finally, configure shared instance of Pathfinder, simply by calling `configure()` and passing in everything we've just defined.
 ```swift
 Pathfinder.shared.configure(
     config: .init(
@@ -77,10 +77,10 @@ Pathfinder.shared.configure(
 
 ## Usage
 #### Building URLs
-To build URL string you need to call `buildUrl()` method, passing in:
+To build an URL string you'll need to call `buildUrl()` method, passing in:
 - The required UrlSpec's Id
 
-- Path parameters (dictionary, which key is path parameter that could be found in endPoint (ex.: {sessionId} in auth/login/{sessionId}))
+- Path parameters - dictionary, which key is path parameter that could be found in endPoint (ex.: {sessionId} in auth/login/{sessionId})
 
 - QueryParameters - dictionary, which values will be placed like GET params 
 ```swift
@@ -92,13 +92,13 @@ if let url = try? Pathfinder.shared.buildUrl(id: "auth", pathParameters: [:], qu
 ```
 
 #### Changing parameters with UI
-To get UIViewController with Pathfinder interface, you just need to call `makeController()`
+To get `UIViewController` with Pathfinder interface, you'll need to call `makeController()`
 ```swift
 Pathfinder.shared.makeController()
 ```
 
 #### Receiving changes
-To receive current Pathfinder configuration state at any time changes are made by the user, make your class conform to the `PathfinderStateDelegate` protocol. Then implement `pathfinder(didReceiveUpdatedState state: PFState)` function.
+To receive a current Pathfinder configuration state whenever changes are made by the user, make your class conform to the `PathfinderStateDelegate` protocol. Then implement `pathfinder(didReceiveUpdatedState state: PFState)` function.
 ```swift
 extension ViewController: PathfinderStateDelegate {
     func pathfinder(didReceiveUpdatedState state: PFState) {
