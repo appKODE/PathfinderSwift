@@ -1,6 +1,6 @@
 # Pathfinder
 
-### Pathfinder - lightweight library that allows you to easily resolve URL's, depending on whatever environment, path parameters, query paramteres are currently chosen. Our library also provides you the abilities of toggling between you Dev or Production servers or mocking responses conveniently through the UI.
+Pathfinder - lightweight library that allows you to easily resolve URL's, depending on whatever environment, path parameters, query paramteres are currently chosen. Our library also provides you the abilities of toggling between you Dev or Production servers or mocking responses conveniently through the UI.
 
 
 ## Pathfinder for other platforms
