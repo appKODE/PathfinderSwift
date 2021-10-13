@@ -108,7 +108,7 @@ extension ViewController: PathfinderStateDelegate {
 - Search
 
 ## Author
-KODE slurm@kode.ru
+KODE ios-team@kode.ru
 
 ## License
 
