@@ -18,11 +18,22 @@ final class PFController: UIViewController {
 
     private let presentationStyleSelectorView = PFPresentationStyleSelectorView(.list)
     private var presentationPagerContainer = UIStackView()
-    private let serverSelector = PFServerSelectorView()
-    private var nestedView = PFNestedListView(Pathfinder.shared.getGroupedRequests())
-    private var dataList: [UrlSpec] = Pathfinder.shared.getAllUrls()
+    private lazy var serverSelector = PFServerSelectorView(pathfinder: pathfinder)
+    private lazy var nestedView = PFNestedListView(pathfinder.getGroupedRequests())
+    private lazy var dataList: [UrlSpec] = pathfinder.getAllUrls()
     private lazy var filteredList = dataList
     private var bottomStackConstraint: NSLayoutConstraint?
+
+    private let pathfinder: Pathfinder
+
+    init(pathfinder: Pathfinder) {
+        self.pathfinder = pathfinder
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,8 +44,8 @@ final class PFController: UIViewController {
         view.backgroundColor = .white
         configureLayout()
         setupTable()
-        serverSelector.onSelected = { server in
-            Pathfinder.shared.changeEnvironment(to: server)
+        serverSelector.onSelected = { [unowned pathfinder] server in
+            pathfinder.changeEnvironment(to: server)
         }
         searchBar.delegate = self
 
@@ -51,13 +62,13 @@ final class PFController: UIViewController {
     }
 
     private func refreshData() {
-        nestedView     = PFNestedListView(Pathfinder.shared.getGroupedRequests())
-        dataList       = Pathfinder.shared.getAllUrls()
+        nestedView     = PFNestedListView(pathfinder.getGroupedRequests())
+        dataList       = pathfinder.getAllUrls()
         filteredList   = dataList
         searchBar.text = ""
 
-        nestedView.onSelectQuery = { [weak self] query in
-            self?.present(PFQueryEditorController(config: query), animated: true)
+        nestedView.onSelectQuery = { [weak self, unowned pathfinder] query in
+            self?.present(PFQueryEditorController(config: query, pathfinder: pathfinder), animated: true)
         }
 
         handlePresentationStyleChange(to: .list)
@@ -71,8 +82,8 @@ final class PFController: UIViewController {
         bottomStackConstraint = stackView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         bottomStackConstraint?.isActive = true
 
-        nestedView.onSelectQuery = { [weak self] query in
-            self?.present(PFQueryEditorController(config: query), animated: true)
+        nestedView.onSelectQuery = { [weak self, unowned pathfinder] query in
+            self?.present(PFQueryEditorController(config: query, pathfinder: pathfinder), animated: true)
         }
 
         presentationStyleSelectorView.onSelect = { [weak self] style in
@@ -182,7 +193,7 @@ extension PFController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         searchBar.resignFirstResponder()
         let queryModel = filteredList[indexPath.row]
-        let controller = PFQueryEditorController(config: queryModel)
+        let controller = PFQueryEditorController(config: queryModel, pathfinder: pathfinder)
         controller.onClose = { [weak self] in
             self?.refreshData()
         }

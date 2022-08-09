@@ -104,7 +104,7 @@ public final class Pathfinder {
     /// Returns PathfinderController to present
     ///
     public func makeController() -> UIViewController {
-        return PFController()
+        return PFController(pathfinder: self)
     }
 
     ///
@@ -116,7 +116,7 @@ public final class Pathfinder {
     ///   - urlId:     UrlSpec Id, needed to save envParam value only for one definite UrlSpec
     ///
     public func setParamValue(of paramName: String, value: String, for urlId: String) {
-        var allQueries = Self.shared.getAllUrls()
+        var allQueries = getAllUrls()
 
         if let queryIndex = allQueries.firstIndex(where: { $0.id == urlId }) {
             allQueries[queryIndex].temporaryEnvParameters[paramName] = value

@@ -5,14 +5,17 @@ final class PFServerSelectorView: UIView {
     var onSelected: PFServerTypeView.EnvironmentTypeSelectionHandler?
 
     // Properties
-    private var selectedServerType: PFEnvironment = Pathfinder.shared.getCurrentEnvironment()
+    private let pathfinder: Pathfinder
+
+    private lazy var selectedServerType: PFEnvironment = pathfinder.getCurrentEnvironment()
 
     // Layout
     private var mainStackView = UIStackView(axis: .horizontal) {
         $0.distribution = .fillEqually
     }
 
-    init() {
+    init(pathfinder: Pathfinder) {
+        self.pathfinder = pathfinder
         super.init(frame: .zero)
         setupViews()
     }
@@ -23,7 +26,7 @@ final class PFServerSelectorView: UIView {
 
     private func setupViews() {
         mainStackView.embedIn(self)
-        Pathfinder.shared.getAllEnvironments().forEach { environment in
+        pathfinder.getAllEnvironments().forEach { environment in
             let serverTypeView = PFServerTypeView(as: environment, isSelected: environment == selectedServerType)
 
             serverTypeView.onSelected = { [weak self] environment in
