@@ -1,5 +1,5 @@
 PODS:
-  - Pathfinder-Swift (0.1.2)
+  - Pathfinder-Swift (0.1.3)
 
 DEPENDENCIES:
   - Pathfinder-Swift (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Pathfinder-Swift: 672ebf9e8936b5553ad3c638cac61783bc3cbaaf
+  Pathfinder-Swift: db8fec3282f537f8e278f78c7eec0b99a7b964b6
 
 PODFILE CHECKSUM: 1fb8d0a0da6c9b5223f2432906daa1e9021c82e4
 
