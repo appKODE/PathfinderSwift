@@ -17,8 +17,8 @@ Pathfinder – lightweight library that allows you to easily resolve URL's, depe
 **iOS 9.0+**
 
 ## Usage examples
-<img src="Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.04.png" width="200" height="450">
-<img src="Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.10.png" width="200" height="450">
+<img src="Screenshots/Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.04.png" width="200" height="450">
+<img src="Screenshots/Simulator_Screen_Shot_-_iPhone_12_Pro_Max_-_2021-07-19_at_16.53.10.png" width="200" height="450">
 
 ## Installation
 
@@ -104,11 +104,17 @@ extension ViewController: PathfinderStateDelegate {
 }
 ```
 
+#### Changing environment parameter from code
+If you need to force-change your environment parameter from code instead of doing it through UI, you may call `setParamValue()`.
+```swift
+Pathfinder.shared.setParamValue(of: "__code", value: "400", for: "auth")
+```
+
 ## TODO
-- Search
+Some ideas here...
 
 ## Author
-KODE ios-team@kode.ru
+KODE slurm@kode.ru
 
 ## License
 
