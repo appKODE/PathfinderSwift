@@ -2,7 +2,8 @@ import Foundation
 import UIKit
 
 final class PFQueryEditorController: UIViewController {
-    private var config: UrlSpec?
+    private let config: UrlSpec
+    private let pathfinder: Pathfinder
 
     public var onClose: (() -> Void)?
 
@@ -10,9 +11,14 @@ final class PFQueryEditorController: UIViewController {
         $0.distribution = .fillEqually
     }
 
-    convenience init(config: UrlSpec) {
-        self.init()
+    init(config: UrlSpec, pathfinder: Pathfinder) {
         self.config = config
+        self.pathfinder = pathfinder
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
     override public func viewDidLoad() {
@@ -22,8 +28,6 @@ final class PFQueryEditorController: UIViewController {
     }
 
     private func setupViews() {
-
-        guard let config = config else { return }
         let iconView = UIImageView()
         iconView.image = nil
         iconView.contentMode = .scaleAspectFit
@@ -87,11 +91,10 @@ final class PFQueryEditorController: UIViewController {
     }
 
     override public func viewWillDisappear(_ animated: Bool) {
-        guard let config = config else { return }
-        vStack.arrangedSubviews.forEach { subview in
+        vStack.arrangedSubviews.forEach { [unowned pathfinder] subview in
             if let editorView = subview as? PFQueryEditorField,
                let value = editorView.value {
-                Pathfinder.shared.setParamValue(of: editorView.paramName, value: value, for: config.id)
+                pathfinder.setParamValue(of: editorView.paramName, value: value, for: config.id)
             }
         }
         onClose?()
@@ -99,15 +102,14 @@ final class PFQueryEditorController: UIViewController {
     }
 
     private func fillVStack() {
-        guard let config = config else { return }
         vStack.arrangedSubviews.forEach { subview in
             vStack.removeArrangedSubview(subview)
             subview.removeFromSuperview()
         }
 
-        let params = Pathfinder.shared.getCurrentEnvironment().queryParams
-        params.forEach { param in
-            let value: String? = Pathfinder.shared.getParamValue(of: param, for: config.id)
+        let params = pathfinder.getCurrentEnvironment().queryParams
+        params.forEach { [unowned pathfinder] param in
+            let value: String? = pathfinder.getParamValue(of: param, for: config.id)
             let editorField = PFQueryEditorField(paramName: param, value: value)
             vStack.addArrangedSubview(editorField)
         }
