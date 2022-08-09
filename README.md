@@ -1,6 +1,6 @@
 # Pathfinder
 
-Pathfinder – lightweight library that allows you to easily resolve URL's, depending on whatever environment, path parameters and query paramteres are currently chosen. Our library also provides you the abilities of toggling between you Dev or Production servers or mocking responses conveniently through the UI.
+Pathfinder – lightweight library that allows you to easily resolve URL's, depending on whatever environment, path parameters and query parameters are currently chosen. Our library also provides you the abilities of toggling between you Dev or Production servers or mocking responses conveniently through the UI.
 
 ## Example
 - Clone the Repo
@@ -60,7 +60,7 @@ let devEnv = PFEnvironment(
 ```
 
 #### Third step
-Finally, configure shared instance of Pathfinder, simply by calling `configure()` and passing in everything we've just defined.
+Finally, configure shared or regular instance of Pathfinder, simply by calling `configure()` and passing in everything we've just defined.
 ```swift
 Pathfinder.shared.configure(
     config: .init(
@@ -70,6 +70,7 @@ Pathfinder.shared.configure(
     )
 )
 ```
+If you need to support multiple hosts with their own environments, create individual instance of Pathfinder for each of them.
 
 ## Usage
 #### Building URLs
