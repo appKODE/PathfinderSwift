@@ -1,5 +1,5 @@
 import XCTest
-import Pathfinder
+import Pathfinder_Swift
 
 class Tests: XCTestCase {
     
