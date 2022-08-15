@@ -82,7 +82,7 @@
 		6E9029AF1D9C877E62144B068EAEB4F0 /* PFEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PFEnvironment.swift; path = "Pathfinder-Swift/Classes/PFEnvironment.swift"; sourceTree = "<group>"; };
 		70EE7C8DEC43B1F8DE88B0964D88F66A /* PFQueryEditorController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PFQueryEditorController.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		751E2DBDDC313AB1563E6BA689B3A549 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		751E2DBDDC313AB1563E6BA689B3A549 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		799E5D6A9F930AEEC7849C77829C52E3 /* Pods-Pathfinder-Swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pathfinder-Swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		834E5A4D3733B477BD3E1F9959AFC7C2 /* Pods-Pathfinder-Swift_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pathfinder-Swift_Tests"; path = Pods_Pathfinder_Swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		897734A3F10B03198FF320BAEDFDF357 /* PathfinderUrlSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PathfinderUrlSpec.swift; path = "Pathfinder-Swift/Classes/PathfinderUrlSpec.swift"; sourceTree = "<group>"; };
@@ -90,15 +90,15 @@
 		8CC45D1C8E78E2843F569BF25AD954E9 /* Pods-Pathfinder-Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pathfinder-Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		918521AA8F6113266D074BE3C90897D4 /* Pods-Pathfinder-Swift_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pathfinder-Swift_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9C422EBDC7B2EDEF26A179BAEE007335 /* PFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PFError.swift; path = "Pathfinder-Swift/Classes/PFError.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9B3C3CF164C975AABAC495E3921A35A /* Pathfinder-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pathfinder-Swift"; path = Pathfinder_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE119D5F47E9103842B3AB1A784FBD42 /* Pods-Pathfinder-Swift_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pathfinder-Swift_Tests-Info.plist"; sourceTree = "<group>"; };
 		AF5ACD07EC3E097514DB87248EBC9A13 /* PFServerSelectorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PFServerSelectorView.swift; sourceTree = "<group>"; };
 		AFCF4E7693643A4C1F86FB877D0E6E08 /* PFCategoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PFCategoryView.swift; sourceTree = "<group>"; };
-		B89C5B9A40EBB4B6636134D39161DE06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B89C5B9A40EBB4B6636134D39161DE06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C04256506755633181B64FA322D441F0 /* PFQueryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PFQueryView.swift; sourceTree = "<group>"; };
 		C6E85155644F829A18475A77FBEE4DAD /* Pathfinder-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pathfinder-Swift-umbrella.h"; sourceTree = "<group>"; };
-		CAAD121BB7ED24146379274BD2A8654F /* Pathfinder-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "Pathfinder-Swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CAAD121BB7ED24146379274BD2A8654F /* Pathfinder-Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "Pathfinder-Swift.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CD0C501C0E00E21CB20663997F13D903 /* Pods-Pathfinder-Swift_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pathfinder-Swift_Example-Info.plist"; sourceTree = "<group>"; };
 		CF6AF9E0EE388FDB05A3E7593CF198FE /* UIView + Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		D172EC0970C03633B6146D4ED59C440E /* PFQueryEditorField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PFQueryEditorField.swift; sourceTree = "<group>"; };
@@ -192,7 +192,6 @@
 				8996DB94EFAC4A476CD19A27DBE77011 /* PFPresentationStyleView.swift */,
 				5C82447B585714D0AC9A4F4C7B8C9560 /* PFQueriesPresentationStyle.swift */,
 			);
-			name = PFPresentationStyleSelector;
 			path = PFPresentationStyleSelector;
 			sourceTree = "<group>";
 		};
@@ -272,7 +271,6 @@
 				AF5ACD07EC3E097514DB87248EBC9A13 /* PFServerSelectorView.swift */,
 				49EF1E9752BDEAAB344ACD3AB4D5A34E /* PFServerTypeView.swift */,
 			);
-			name = PFServerSelector;
 			path = PFServerSelector;
 			sourceTree = "<group>";
 		};
@@ -323,7 +321,6 @@
 				DC15FC70937BFD5B7BFF3A4419457843 /* PFNestedListView.swift */,
 				C04256506755633181B64FA322D441F0 /* PFQueryView.swift */,
 			);
-			name = PFNestedList;
 			path = PFNestedList;
 			sourceTree = "<group>";
 		};
@@ -787,8 +784,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
