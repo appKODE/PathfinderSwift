@@ -24,6 +24,10 @@ final class PFQueryEditorController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+
+        if #available(iOS 13.0, *) {
+            overrideUserInterfaceStyle = .light
+        }
         setupViews()
     }
 
